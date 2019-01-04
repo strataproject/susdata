@@ -57,10 +57,15 @@
 
               <p>Interested in knowing more?</p>
 
-              <div class="form-alt" id="register">
-                <form id="chimp-form" class="subscribe-form wow zoomIn" action="assets/php/subscribe.php" method="post" accept-charset="UTF-8" enctype="application/x-www-form-urlencoded" autocomplete="off" novalidate>
-                  <input class="mail" id="chimp-email" type="email" name="email" placeholder="Your email" autocomplete="off"><input class="submit-button" type="submit" value="Register interest">
+              <div class="form-alt" id="register" >
+                <form  name="register-interest" data-netlify="true" id="chimp-form" class="subscribe-form wow zoomIn" action="/" method="post" accept-charset="UTF-8" enctype="application/x-www-form-urlencoded" autocomplete="on" novalidate>
+                  <p style="display: none;">
+                    <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+                  </p>
+                  <input class="mail" id="chimp-email" type="email" name="email" placeholder="Your email" autocomplete="email"><input class="submit-button" type="submit" value="Register interest">
+                  <div id="result"></div>
                 </form>
+                
                 <div id="response"></div>
               </div>
             </div>

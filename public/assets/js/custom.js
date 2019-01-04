@@ -128,7 +128,10 @@ jQuery(function($) {
       // if valid, post data via AJAX
       submitHandler: function(form) {
         $.post('/', { email: $('#chimp-email').val() }, function(data) {
-          $('#response').html(data)
+          console.log('Got data', $('#result'))
+          $('#result').html(
+            '<p>Thanks for your interest. We will be in touch.</p>'
+          )
         })
       },
       // all fields are required
