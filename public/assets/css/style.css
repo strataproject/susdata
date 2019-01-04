@@ -95,6 +95,9 @@ body {
   box-sizing: border-box;
 }
 
+.logo-green {
+  color: #44dd66;
+}
 
 #loading {
    width: 100%;
