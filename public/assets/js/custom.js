@@ -135,6 +135,7 @@ jQuery(function($) {
             $('#result').html(
               '<p>Thanks for your interest. We will be in touch.</p>'
             )
+            analytics.track('signed_up', { email: $('#chimp-email').val() })
           }
         )
       },
