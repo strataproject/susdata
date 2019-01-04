@@ -127,13 +127,9 @@ jQuery(function($) {
     $('#chimp-form').validate({
       // if valid, post data via AJAX
       submitHandler: function(form) {
-        $.post(
-          'assets/php/subscribe.php',
-          { email: $('#chimp-email').val() },
-          function(data) {
-            $('#response').html(data)
-          }
-        )
+        $.post('/', { email: $('#chimp-email').val() }, function(data) {
+          $('#response').html(data)
+        })
       },
       // all fields are required
       rules: {
