@@ -127,7 +127,7 @@ jQuery(function($) {
     $('#chimp-form').validate({
       // if valid, post data via AJAX
       submitHandler: function(form) {
-        var $form = $('#register-interest')
+        var $form = $('#chimp-form')
         $.post($form.attr('action'), $form.serialize()).then(function() {
           $('#result').html(
             '<p>Thanks for your interest. We will be in touch.</p>'
